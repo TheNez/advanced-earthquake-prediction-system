@@ -40,21 +40,14 @@ This system provides **multi-timeframe earthquake risk assessment** (2025-2125+)
 ![Earthquake Prediction Demo](earthquake_prediction_demo.gif)
 
 ### 📊 Interactive Dashboards
-> **🚀 Live Demos**: Enable GitHub Pages to access interactive visualizations!
-
-**Step 1**: Go to [Repository Settings → Pages](https://github.com/TheNez/advanced-earthquake-prediction-system/settings/pages)  
-**Step 2**: Set Source to "Deploy from branch" → main → /docs → Save  
-**Step 3**: Wait 2-5 minutes for deployment  
-
-**Once GitHub Pages is active, these links will work:**
 - 🗺️ **[Global Risk Map](https://thenez.github.io/advanced-earthquake-prediction-system/interactive_risk_map.html)** - Real-time volcanic risk assessment
 - 📈 **[Prediction Dashboard](https://thenez.github.io/advanced-earthquake-prediction-system/prediction_dashboard.html)** - Comprehensive analytics & forecasting
 - 🌋 **[Geological Analysis](https://thenez.github.io/advanced-earthquake-prediction-system/geological_analysis_map.html)** - Tectonic plate & fault line visualization
 - 🎬 **[Live Demo Animation](https://thenez.github.io/advanced-earthquake-prediction-system/demo_animation.html)** - Watch the system in action
 
-> 🌐 **[Main Demo Portal](https://thenez.github.io/advanced-earthquake-prediction-system/)** - Complete visualization suite!
+> 🚀 **[Explore All Interactive Demos](https://thenez.github.io/advanced-earthquake-prediction-system/)** - Complete visualization suite!
 
-**Alternatively, run locally:**
+**Run locally:**
 ```bash
 python demo_visualization.py  # Creates all HTML files locally
 open interactive_risk_map.html  # View in your browser
