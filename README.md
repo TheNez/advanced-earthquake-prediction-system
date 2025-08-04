@@ -1,13 +1,13 @@
 # 🌍 Advanced Earthquake Prediction Sys![Earthquake Prediction Demo](earthquake_prediction_demo.gif)
 
 ### 📊 Interactive Dashboards
-> **🚀 Live Demos**:
+**🚀 Live Demos**:
 - 🗺️ **[Global Risk Map](https://thenez.github.io/advanced-earthquake-prediction-system/interactive_risk_map.html)** - Real-time volcanic risk assessment
 - 📈 **[Prediction Dashboard](https://thenez.github.io/advanced-earthquake-prediction-system/prediction_dashboard.html)** - Comprehensive analytics & forecasting
 - 🌋 **[Geological Analysis](https://thenez.github.io/advanced-earthquake-prediction-system/geological_analysis_map.html)** - Tectonic plate & fault line visualization
 - 🎬 **[Live Demo Animation](https://thenez.github.io/advanced-earthquake-prediction-system/demo_animation.html)** - Watch the system in action
 
-> 🌐 **[Main Demo Portal](https://thenez.github.io/advanced-earthquake-prediction-system/)** - Complete visualization suite!
+🌐 **[Main Demo Portal](https://thenez.github.io/advanced-earthquake-prediction-system/)** - Complete visualization suite!
 
 **Alternatively, run locally:**
 ```bash
@@ -15,7 +15,7 @@ python demo_visualization.py  # Creates all HTML files locally
 open interactive_risk_map.html  # View in your browser
 ```vanced Earthquake Prediction System](github_banner.png)
 
-> 🏆 **95%+ Accuracy** | 🌋 **78 Volcanoes** | 🔮 **ML-Powered Predictions** | 🌍 **Global Coverage**
+🏆 **95%+ Accuracy** | 🌋 **78 Volcanoes** | 🔮 **ML-Powered Predictions** | 🌍 **Global Coverage**
 
 A comprehensive, scientific-grade Python application for earthquake risk assessment that integrates geological, tectonic, and volcanic analysis using advanced machine learning techniques.
 
