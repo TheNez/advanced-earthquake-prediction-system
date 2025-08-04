@@ -1,13 +1,7 @@
 # 🌍 Advanced Earthquake Prediction Sys![Earthquake Prediction Demo](earthquake_prediction_demo.gif)
 
 ### 📊 Interactive Dashboards
-> **🚀 Live Demos**: Enable GitHub Pages to access interactive visualizations!
-
-**Step 1**: Go to [Repository Settings → Pages](https://github.com/TheNez/advanced-earthquake-prediction-system/settings/pages)  
-**Step 2**: Set Source to "Deploy from branch" → main → /docs → Save  
-**Step 3**: Wait 2-5 minutes for deployment  
-
-**Once GitHub Pages is active, these links will work:**
+> **🚀 Live Demos**:
 - 🗺️ **[Global Risk Map](https://thenez.github.io/advanced-earthquake-prediction-system/interactive_risk_map.html)** - Real-time volcanic risk assessment
 - 📈 **[Prediction Dashboard](https://thenez.github.io/advanced-earthquake-prediction-system/prediction_dashboard.html)** - Comprehensive analytics & forecasting
 - 🌋 **[Geological Analysis](https://thenez.github.io/advanced-earthquake-prediction-system/geological_analysis_map.html)** - Tectonic plate & fault line visualization
