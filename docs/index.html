@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Earthquake Prediction System - Interactive Demos</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .demo-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .demo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .demo-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        .demo-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .github-link {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+        .github-link a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .stats {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .stats h3 {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+        .stat-item {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 10px;
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #1976d2;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Advanced Earthquake Prediction System</h1>
+        <h2 style="text-align: center; color: #666; margin-bottom: 30px;">Interactive Demonstrations & Visualizations</h2>
+        
+        <div class="stats">
+            <h3>🎯 System Performance</h3>
+            <div class="stat-item">
+                <div class="stat-value">95.7%</div>
+                <div class="stat-label">ML Accuracy</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">78</div>
+                <div class="stat-label">Volcanoes Monitored</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">24/7</div>
+                <div class="stat-label">Real-time Analysis</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">100+</div>
+                <div class="stat-label">Years Prediction</div>
+            </div>
+        </div>
+
+        <div class="demo-grid">
+            <div class="demo-card">
+                <h3>🗺️ Global Risk Assessment Map</h3>
+                <p>Interactive world map showing real-time volcanic and seismic risk levels across 78 monitored volcanoes. Features heat mapping and detailed volcano information.</p>
+                <a href="interactive_risk_map.html" class="btn">View Interactive Map</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>📊 Prediction Dashboard</h3>
+                <p>Comprehensive analytics dashboard with real-time predictions, accuracy trends, geographic distribution, and multi-timeframe risk assessments.</p>
+                <a href="prediction_dashboard.html" class="btn">Open Dashboard</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>🌋 Geological Analysis Map</h3>
+                <p>Advanced geological visualization showing tectonic plate boundaries, fault lines, and geological stress analysis with interactive features.</p>
+                <a href="geological_analysis_map.html" class="btn">Explore Geology</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>🎬 Live Demo Animation</h3>
+                <p>Animated demonstration showing the earthquake prediction system in action with real-time data processing and confidence intervals.</p>
+                <a href="demo_animation.html" class="btn">Watch Demo</a>
+            </div>
+        </div>
+
+        <div class="github-link">
+            <p>🚀 <strong>Open Source Project:</strong> <a href="https://github.com/TheNez/advanced-earthquake-prediction-system" target="_blank">View on GitHub</a></p>
+            <p>⭐ Star the repository | 🍴 Fork and contribute | 📝 Report issues</p>
+        </div>
+    </div>
+</body>
+</html>

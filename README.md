@@ -40,12 +40,12 @@ This system provides **multi-timeframe earthquake risk assessment** (2025-2125+)
 ![Earthquake Prediction Demo](earthquake_prediction_demo.gif)
 
 ### 📊 Interactive Dashboards
-- 🗺️ **[Global Risk Map](interactive_risk_map.html)** - Real-time volcanic risk assessment
-- 📈 **[Prediction Dashboard](prediction_dashboard.html)** - Comprehensive analytics & forecasting
-- 🎯 **Real-time Predictions** with confidence intervals
-- 🌋 **Volcanic Activity Monitoring** across 78 global volcanoes
+- 🗺️ **[Global Risk Map](https://thenez.github.io/advanced-earthquake-prediction-system/interactive_risk_map.html)** - Real-time volcanic risk assessment
+- 📈 **[Prediction Dashboard](https://thenez.github.io/advanced-earthquake-prediction-system/prediction_dashboard.html)** - Comprehensive analytics & forecasting
+- � **[Geological Analysis](https://thenez.github.io/advanced-earthquake-prediction-system/geological_analysis_map.html)** - Tectonic plate & fault line visualization
+- � **[Live Demo Animation](https://thenez.github.io/advanced-earthquake-prediction-system/demo_animation.html)** - Watch the system in action
 
-> 🚀 **[Try the Interactive Demo](prediction_dashboard.html)** to explore real-time earthquake predictions!
+> 🚀 **[Explore All Interactive Demos](https://thenez.github.io/advanced-earthquake-prediction-system/)** - Complete visualization suite!
 
 ## 📁 Python Scripts Overview
 
