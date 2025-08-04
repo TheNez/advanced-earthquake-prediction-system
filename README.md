@@ -1,6 +1,15 @@
 # 🌍 Advanced Earthquake Prediction System
 
+![Advanced Earthquake Prediction System](github_banner.png)
+
+> 🏆 **95%+ Accuracy** | 🌋 **78 Volcanoes** | 🔮 **ML-Powered Predictions** | 🌍 **Global Coverage**
+
 A comprehensive, scientific-grade Python application for earthquake risk assessment that integrates geological, tectonic, and volcanic analysis using advanced machine learning techniques.
+
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white)](https://tensorflow.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/TheNez/advanced-earthquake-prediction-system.svg?style=social&label=Star)](https://github.com/TheNez/advanced-earthquake-prediction-system)
 
 ## 🚀 System Overview
 
@@ -25,6 +34,18 @@ This system provides **multi-timeframe earthquake risk assessment** (2025-2125+)
 - **Volcanic Risk Integration**: Distance-based risk calculations
 - **Stress Accumulation Analysis**: Multi-factor geological stress modeling
 - **Timeframe Analysis**: 5 prediction periods with reliability assessment
+
+## 🎬 Live Demo & Visualizations
+
+![Earthquake Prediction Demo](earthquake_prediction_demo.gif)
+
+### 📊 Interactive Dashboards
+- 🗺️ **[Global Risk Map](interactive_risk_map.html)** - Real-time volcanic risk assessment
+- 📈 **[Prediction Dashboard](prediction_dashboard.html)** - Comprehensive analytics & forecasting
+- 🎯 **Real-time Predictions** with confidence intervals
+- 🌋 **Volcanic Activity Monitoring** across 78 global volcanoes
+
+> 🚀 **[Try the Interactive Demo](prediction_dashboard.html)** to explore real-time earthquake predictions!
 
 ## 📁 Python Scripts Overview
 

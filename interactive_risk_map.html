@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b4afbe0dd067f998c83013d44a692119 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+        <div style="position: fixed; 
+                    bottom: 50px; left: 50px; width: 200px; height: 120px; 
+                    background-color: white; border:2px solid grey; z-index:9999; 
+                    font-size:14px; padding: 10px">
+        <h4>🌋 Risk Levels</h4>
+        <p><span style="color:#FF4444;">●</span> High Risk</p>
+        <p><span style="color:#FF8800;">●</span> Medium Risk</p>
+        <p><span style="color:#FFDD00;">●</span> Low Risk</p>
+        <p><span style="color:#44AA44;">●</span> Minimal Risk</p>
+        </div>
+        
+    
+            <div class="folium-map" id="map_b4afbe0dd067f998c83013d44a692119" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b4afbe0dd067f998c83013d44a692119 = L.map(
+                "map_b4afbe0dd067f998c83013d44a692119",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69293d3f73c387eaa6e5db7499c20713 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_69293d3f73c387eaa6e5db7499c20713.addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+    
+            var circle_marker_217ce67bc36960f3e9dca84fcf6a40a3 = L.circleMarker(
+                [40.821, 14.4261],
+                {"bubblingMouseEvents": true, "color": "#FF4444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4444", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+    
+        var popup_1f8c2b9c461b01d910cf8ab360d7854d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb2be9ac6e9187818f7ac0bc981e2f37 = $(`<div id="html_fb2be9ac6e9187818f7ac0bc981e2f37" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <h4>Mount Vesuvius</h4>                     <p><strong>Risk Level:</strong> High</p>                     <p><strong>Last Eruption:</strong> 1944</p>                     <p><strong>AI Prediction:</strong> 76% accuracy</p>                 </div>                 </div>`)[0];
+                popup_1f8c2b9c461b01d910cf8ab360d7854d.setContent(html_fb2be9ac6e9187818f7ac0bc981e2f37);
+            
+        
+
+        circle_marker_217ce67bc36960f3e9dca84fcf6a40a3.bindPopup(popup_1f8c2b9c461b01d910cf8ab360d7854d)
+        ;
+
+        
+    
+    
+            var circle_marker_b5132dc93874865f3cfe6666e30ac729 = L.circleMarker(
+                [35.3606, 138.7274],
+                {"bubblingMouseEvents": true, "color": "#FF8800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF8800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+    
+        var popup_5c0623f89ed00215c9b555b9776d31d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9d4ab6042c060612325290837a9371e = $(`<div id="html_e9d4ab6042c060612325290837a9371e" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <h4>Mount Fuji</h4>                     <p><strong>Risk Level:</strong> Medium</p>                     <p><strong>Last Eruption:</strong> 1707</p>                     <p><strong>AI Prediction:</strong> 90% accuracy</p>                 </div>                 </div>`)[0];
+                popup_5c0623f89ed00215c9b555b9776d31d4.setContent(html_e9d4ab6042c060612325290837a9371e);
+            
+        
+
+        circle_marker_b5132dc93874865f3cfe6666e30ac729.bindPopup(popup_5c0623f89ed00215c9b555b9776d31d4)
+        ;
+
+        
+    
+    
+            var circle_marker_91447cd459984b79915a338f84495fca = L.circleMarker(
+                [44.428, -110.5885],
+                {"bubblingMouseEvents": true, "color": "#FF4444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4444", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+    
+        var popup_ad09228855167143d6cfe91c6db4263d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0298868df6f98508bd43e123cc621ea = $(`<div id="html_d0298868df6f98508bd43e123cc621ea" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <h4>Yellowstone</h4>                     <p><strong>Risk Level:</strong> High</p>                     <p><strong>Last Eruption:</strong> 70000 BCE</p>                     <p><strong>AI Prediction:</strong> 75% accuracy</p>                 </div>                 </div>`)[0];
+                popup_ad09228855167143d6cfe91c6db4263d.setContent(html_d0298868df6f98508bd43e123cc621ea);
+            
+        
+
+        circle_marker_91447cd459984b79915a338f84495fca.bindPopup(popup_ad09228855167143d6cfe91c6db4263d)
+        ;
+
+        
+    
+    
+            var circle_marker_e6bd223621e8c2ce7feeeb0f372b1c3b = L.circleMarker(
+                [19.4069, -155.2834],
+                {"bubblingMouseEvents": true, "color": "#FF4444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4444", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+    
+        var popup_d8947cd9e1bdf4f393cf1486ac720e59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db0dc7ef3914be35b8eedc3e4e069f00 = $(`<div id="html_db0dc7ef3914be35b8eedc3e4e069f00" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <h4>Kilauea</h4>                     <p><strong>Risk Level:</strong> High</p>                     <p><strong>Last Eruption:</strong> 2023</p>                     <p><strong>AI Prediction:</strong> 73% accuracy</p>                 </div>                 </div>`)[0];
+                popup_d8947cd9e1bdf4f393cf1486ac720e59.setContent(html_db0dc7ef3914be35b8eedc3e4e069f00);
+            
+        
+
+        circle_marker_e6bd223621e8c2ce7feeeb0f372b1c3b.bindPopup(popup_d8947cd9e1bdf4f393cf1486ac720e59)
+        ;
+
+        
+    
+    
+            var circle_marker_abf4dd508b1f012d340832f648f1a470 = L.circleMarker(
+                [46.8523, -121.7603],
+                {"bubblingMouseEvents": true, "color": "#FF8800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF8800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+    
+        var popup_15fc843846d68fa2cc74de13c8feafe2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d26af727a5baec16c1c37a646e78b462 = $(`<div id="html_d26af727a5baec16c1c37a646e78b462" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <h4>Mount Rainier</h4>                     <p><strong>Risk Level:</strong> Medium</p>                     <p><strong>Last Eruption:</strong> 1894</p>                     <p><strong>AI Prediction:</strong> 72% accuracy</p>                 </div>                 </div>`)[0];
+                popup_15fc843846d68fa2cc74de13c8feafe2.setContent(html_d26af727a5baec16c1c37a646e78b462);
+            
+        
+
+        circle_marker_abf4dd508b1f012d340832f648f1a470.bindPopup(popup_15fc843846d68fa2cc74de13c8feafe2)
+        ;
+
+        
+    
+    
+            var circle_marker_7bb207e51e5ca5d56e9ffe21f9a807ff = L.circleMarker(
+                [38.789, 15.213],
+                {"bubblingMouseEvents": true, "color": "#FF8800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF8800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+    
+        var popup_352fad4803921eb6b1859b36f204fa3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a808c7fe2430165bce13b84ba769d827 = $(`<div id="html_a808c7fe2430165bce13b84ba769d827" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <h4>Stromboli</h4>                     <p><strong>Risk Level:</strong> Medium</p>                     <p><strong>Last Eruption:</strong> 2024</p>                     <p><strong>AI Prediction:</strong> 86% accuracy</p>                 </div>                 </div>`)[0];
+                popup_352fad4803921eb6b1859b36f204fa3f.setContent(html_a808c7fe2430165bce13b84ba769d827);
+            
+        
+
+        circle_marker_7bb207e51e5ca5d56e9ffe21f9a807ff.bindPopup(popup_352fad4803921eb6b1859b36f204fa3f)
+        ;
+
+        
+    
+    
+            var circle_marker_103554331e0f8155b82c19ced504e5da = L.circleMarker(
+                [19.0225, -98.6278],
+                {"bubblingMouseEvents": true, "color": "#FF4444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4444", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+    
+        var popup_85a891140a91ac548dfe7063321ebe66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21611693cd695ec6b58f3723658d93f3 = $(`<div id="html_21611693cd695ec6b58f3723658d93f3" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <h4>Popocatépetl</h4>                     <p><strong>Risk Level:</strong> High</p>                     <p><strong>Last Eruption:</strong> 2023</p>                     <p><strong>AI Prediction:</strong> 97% accuracy</p>                 </div>                 </div>`)[0];
+                popup_85a891140a91ac548dfe7063321ebe66.setContent(html_21611693cd695ec6b58f3723658d93f3);
+            
+        
+
+        circle_marker_103554331e0f8155b82c19ced504e5da.bindPopup(popup_85a891140a91ac548dfe7063321ebe66)
+        ;
+
+        
+    
+    
+            var circle_marker_75b65dda1bd063479251812a5d4693ff = L.circleMarker(
+                [37.751, 14.9934],
+                {"bubblingMouseEvents": true, "color": "#FF8800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF8800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+    
+        var popup_b3d5bdc3ade4ea2a0a9a15c5b5a069de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adb29740921bf47ec60c2d7a1f761bdd = $(`<div id="html_adb29740921bf47ec60c2d7a1f761bdd" style="width: 100.0%; height: 100.0%;">                 <div style="width: 200px;">                     <h4>Mount Etna</h4>                     <p><strong>Risk Level:</strong> Medium</p>                     <p><strong>Last Eruption:</strong> 2024</p>                     <p><strong>AI Prediction:</strong> 74% accuracy</p>                 </div>                 </div>`)[0];
+                popup_b3d5bdc3ade4ea2a0a9a15c5b5a069de.setContent(html_adb29740921bf47ec60c2d7a1f761bdd);
+            
+        
+
+        circle_marker_75b65dda1bd063479251812a5d4693ff.bindPopup(popup_b3d5bdc3ade4ea2a0a9a15c5b5a069de)
+        ;
+
+        
+    
+    
+            var heat_map_c152e43f9516f11eab1d9d2755616c43 = L.heatLayer(
+                [[40.821, 14.4261, 0.8], [35.3606, 138.7274, 0.5], [44.428, -110.5885, 0.8], [19.4069, -155.2834, 0.8], [46.8523, -121.7603, 0.5], [38.789, 15.213, 0.5], [19.0225, -98.6278, 0.8], [37.751, 14.9934, 0.5]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 10,
+  "radius": 50,
+  "blur": 30,
+  "gradient": {
+  0.0: "#44AA44",
+  0.3: "#FFDD00",
+  0.6: "#FF8800",
+  1.0: "#FF4444",
+},
+}
+            );
+        
+    
+            heat_map_c152e43f9516f11eab1d9d2755616c43.addTo(map_b4afbe0dd067f998c83013d44a692119);
+        
+</script>
+</html>
