@@ -6,8 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for helping improve our geological data accuracy! 
-        
+        Thank you for helping improve our geological data accuracy!
+
         🌋 **Data Quality**: Accurate geological data is crucial for reliable risk assessment.
 
   - type: dropdown
@@ -44,11 +44,11 @@ body:
       label: Correct Data
       description: What should the data be? Please include sources.
       placeholder: |
-        Volcano: Mount St. Helens  
+        Volcano: Mount St. Helens
         Correct coordinates: 46.1912, -122.1944 (USGS source)
         Correct last eruption: 2008 (confirmed)
         Correct VEI: 5 (confirmed)
-        
+
         Source: USGS Volcano Hazards Program
         URL: https://www.usgs.gov/observatories/cascades-volcano-observatory
     validations:

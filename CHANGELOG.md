@@ -79,7 +79,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Enhanced Volcanic Database**: Expand to 150+ volcanoes
 - **Mobile App**: iOS/Android risk assessment application
 
-### [3.0.0] - Future  
+### [3.0.0] - Future
 - **Deep Learning Models**: LSTM networks for temporal patterns
 - **Climate Integration**: Weather correlation analysis
 - **Early Warning System**: Integration with official warning networks
@@ -94,5 +94,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to contribute to t
 ## Versioning Strategy
 
 - **Major versions** (x.0.0): Significant architectural changes or new core features
-- **Minor versions** (x.y.0): New features, enhanced capabilities, or major data updates  
+- **Minor versions** (x.y.0): New features, enhanced capabilities, or major data updates
 - **Patch versions** (x.y.z): Bug fixes, minor improvements, or data corrections

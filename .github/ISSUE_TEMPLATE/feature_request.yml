@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thank you for suggesting a feature! Please provide details about your proposed enhancement.
-        
+
         🌍 **Focus Areas**: Geological accuracy, model improvements, visualization enhancements, new data sources
 
   - type: textarea

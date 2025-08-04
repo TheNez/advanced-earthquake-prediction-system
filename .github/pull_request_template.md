@@ -14,7 +14,7 @@ Brief description of the changes made in this pull request.
 ## Changes Made
 ### 🌍 Geological Improvements
 - [ ] Added new volcano data
-- [ ] Updated tectonic plate boundaries  
+- [ ] Updated tectonic plate boundaries
 - [ ] Improved coordinate accuracy
 - [ ] Enhanced eruption date records
 - [ ] Added new geological regions
@@ -47,7 +47,7 @@ Brief description of the changes made in this pull request.
 - [ ] Code linting/formatting checks
 - [ ] Performance tests (if applicable)
 
-### 🧪 Manual Testing  
+### 🧪 Manual Testing
 - [ ] Tested with sample coordinates
 - [ ] Verified output file generation
 - [ ] Checked prediction accuracy
@@ -65,7 +65,7 @@ Brief description of the changes made in this pull request.
 ### 📈 Performance Impact
 - [ ] No performance degradation
 - [ ] Minor performance improvement
-- [ ] Significant performance improvement  
+- [ ] Significant performance improvement
 - [ ] Performance impact assessed and documented
 
 ### 🎯 Prediction Accuracy

@@ -65,14 +65,14 @@ python -m pytest tests/ -v
 def calculate_volcanic_influence(self, lat: float, lon: float) -> tuple[float, float, int]:
     """
     Calculate volcanic influence on earthquake risk for a given location.
-    
+
     Args:
         lat (float): Latitude in decimal degrees
         lon (float): Longitude in decimal degrees
-        
+
     Returns:
         tuple: (volcanic_risk_index, nearest_volcano_distance, active_volcanoes_nearby)
-        
+
     Example:
         >>> predictor = AdvancedEarthquakePredictor()
         >>> risk, distance, count = predictor.calculate_volcanic_influence(45.0, -122.0)
@@ -96,10 +96,10 @@ from advanced_earthquake_predictor import AdvancedEarthquakePredictor
 def test_volcanic_influence_calculation():
     """Test volcanic influence calculation for known locations."""
     predictor = AdvancedEarthquakePredictor()
-    
+
     # Test near Mount St. Helens
     risk, distance, count = predictor.calculate_volcanic_influence(46.2, -122.18)
-    
+
     assert risk > 0, "Should have volcanic risk near Mount St. Helens"
     assert distance < 50, "Should be close to Mount St. Helens"
     assert count > 0, "Should detect nearby active volcanoes"

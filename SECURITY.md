@@ -18,7 +18,7 @@ If you discover a security vulnerability in this project, please report it respo
 
 1. **DO NOT** open a public GitHub issue
 2. **Email**: Send details to the maintainers privately (use GitHub's private vulnerability reporting)
-3. **Include**: 
+3. **Include**:
    - Description of the vulnerability
    - Steps to reproduce
    - Potential impact
@@ -27,7 +27,7 @@ If you discover a security vulnerability in this project, please report it respo
 ### 📧 Response Timeline
 
 - **Initial response**: Within 48 hours
-- **Assessment**: Within 1 week  
+- **Assessment**: Within 1 week
 - **Fix development**: 2-4 weeks depending on complexity
 - **Public disclosure**: After fix is released and users have time to update
 

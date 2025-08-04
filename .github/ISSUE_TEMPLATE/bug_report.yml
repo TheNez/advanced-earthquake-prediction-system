@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thank you for reporting a bug! Please fill out the information below to help us investigate.
-        
+
         ⚠️ **Important**: This is educational software. Do not report issues related to real-world earthquake predictions or safety decisions.
 
   - type: textarea
@@ -106,7 +106,7 @@ body:
         - label: I'm using the latest version of the code
           required: true
         - label: I've activated the virtual environment properly
-          required: true  
+          required: true
         - label: I've checked the README for similar issues
           required: true
         - label: This is not related to real-world earthquake prediction accuracy
