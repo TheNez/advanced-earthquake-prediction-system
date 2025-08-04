@@ -1,0 +1,113 @@
+name: Bug Report
+description: Report a bug or issue with the earthquake prediction system
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please fill out the information below to help us investigate.
+        
+        ⚠️ **Important**: This is educational software. Do not report issues related to real-world earthquake predictions or safety decisions.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clear description of what the bug is
+      placeholder: "The system crashes when I run advanced_earthquake_predictor.py with..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the bug
+      placeholder: |
+        1. Run `python advanced_earthquake_predictor.py`
+        2. Wait for model training
+        3. Error occurs at...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+      placeholder: "The system should generate geological analysis map and complete successfully"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened (include full error message)
+      placeholder: "Error message: KeyError: 'volcanic_risk_index'..."
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      description: Output of `python --version`
+      placeholder: "Python 3.11.5"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating System
+      description: What OS are you running?
+      options:
+        - macOS
+        - Windows
+        - Linux (Ubuntu)
+        - Linux (other)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Virtual environment, package versions, etc.
+      placeholder: |
+        - Virtual environment: Yes/No
+        - Pandas version: 1.5.3
+        - Scikit-learn version: 1.3.0
+        - Any other relevant package versions
+    validations:
+      required: false
+
+  - type: textarea
+    id: sample-data
+    attributes:
+      label: Sample Input (if applicable)
+      description: If the bug involves specific input data, provide a minimal example
+      placeholder: |
+        Coordinates: 37.7749, -122.4194
+        Magnitude: 6.0
+        Depth: 15
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm you've checked these items
+      options:
+        - label: I'm using the latest version of the code
+          required: true
+        - label: I've activated the virtual environment properly
+          required: true  
+        - label: I've checked the README for similar issues
+          required: true
+        - label: This is not related to real-world earthquake prediction accuracy
+          required: true

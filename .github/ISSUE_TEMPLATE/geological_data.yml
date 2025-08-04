@@ -1,0 +1,132 @@
+name: Geological Data Issue
+description: Report inaccurate geological data (volcanoes, coordinates, eruption dates)
+title: "[GEOLOGY] "
+labels: ["geological-data", "accuracy", "needs-verification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve our geological data accuracy! 
+        
+        🌋 **Data Quality**: Accurate geological data is crucial for reliable risk assessment.
+
+  - type: dropdown
+    id: data-type
+    attributes:
+      label: Data Type
+      description: What type of geological data needs correction?
+      options:
+        - Volcano information (coordinates, eruption dates, VEI)
+        - Tectonic plate boundaries
+        - Fault line data
+        - Earthquake historical data
+        - Regional geological classification
+        - Other geological data
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-data
+    attributes:
+      label: Current Incorrect Data
+      description: What data is currently wrong in the system?
+      placeholder: |
+        Volcano: Mount St. Helens
+        Current coordinates: 46.20, -122.18
+        Current last eruption: 2008
+        Current VEI: 5
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct-data
+    attributes:
+      label: Correct Data
+      description: What should the data be? Please include sources.
+      placeholder: |
+        Volcano: Mount St. Helens  
+        Correct coordinates: 46.1912, -122.1944 (USGS source)
+        Correct last eruption: 2008 (confirmed)
+        Correct VEI: 5 (confirmed)
+        
+        Source: USGS Volcano Hazards Program
+        URL: https://www.usgs.gov/observatories/cascades-volcano-observatory
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Reliable Sources
+      description: List authoritative sources for this correction
+      placeholder: |
+        1. USGS Volcano Hazards Program
+        2. Global Volcanism Program (Smithsonian)
+        3. Relevant scientific papers
+        4. National geological surveys
+    validations:
+      required: true
+
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Confidence Level
+      description: How confident are you in this correction?
+      options:
+        - Very High (official government/scientific source)
+        - High (peer-reviewed publication)
+        - Medium (reputable secondary source)
+        - Low (needs verification)
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact Assessment
+      description: How does this correction affect earthquake risk predictions?
+      placeholder: |
+        - Geographic impact: affects predictions for Pacific Northwest
+        - Risk level changes: may increase/decrease risk for nearby cities
+        - Model accuracy: improves volcanic risk calculations
+    validations:
+      required: false
+
+  - type: input
+    id: affected-locations
+    attributes:
+      label: Affected Geographic Area
+      description: What regions would be affected by this correction?
+      placeholder: "Pacific Northwest, Seattle-Tacoma metro area, Mount Rainier National Park"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Data Verification
+      description: Please confirm your verification steps
+      options:
+        - label: I've cross-referenced multiple authoritative sources
+          required: true
+        - label: I've checked for recent updates to this geological data
+          required: true
+        - label: I've considered the impact on surrounding risk calculations
+          required: false
+        - label: I can provide additional documentation if needed
+          required: false
+
+  - type: checkboxes
+    id: expertise
+    attributes:
+      label: Background (Optional)
+      description: What's your background with this geological data?
+      options:
+        - label: Professional geologist or seismologist
+          required: false
+        - label: Academic researcher in earth sciences
+          required: false
+        - label: Local resident familiar with the area
+          required: false
+        - label: Discovered discrepancy while using the system
+          required: false

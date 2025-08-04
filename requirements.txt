@@ -1,0 +1,13 @@
+numpy==2.3.2
+pandas==2.3.1
+scikit-learn==1.7.1
+matplotlib==3.10.5
+seaborn==0.13.2
+requests==2.32.4
+obspy==1.4.2
+tensorflow==2.20.0rc0
+geopandas==1.1.1
+folium==0.20.0
+geopy==2.4.1
+cartopy==0.25.0
+scipy==1.16.1
